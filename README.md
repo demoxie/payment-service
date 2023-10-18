@@ -6,7 +6,7 @@ Welcome to the API documentation for Project Name. This document provides detail
 
 For detailed API documentation, please refer to the [HTML Documentation](api_documentation.html). It includes the following information:
 ## Note
-a. Before anything, create a file called `.env` in the root directory of the project and past the data sent to you via email. Then proceed to other instructions.
+a. Before anything, create a file called `.env` in the root directory of the project and paste the data sent to you via email. Then proceed to other instructions.
 
 1. Swagger Page URL: `https://localhost:8200/swagger-ui.html`
 2. Swagger Docs URL: `https://localhost:8200/v2/api-docs`
