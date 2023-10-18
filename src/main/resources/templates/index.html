@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        code {
+            background-color: #f9f9f9;
+            padding: 2px 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .instruction {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>API Documentation</h2>
+
+    <div class="instruction">
+        <p>1. Swagger Page URL: <code>https://localhost:8200/swagger-ui.html</code></p>
+        <p>2. Swagger Docs URL: <code>https://localhost:8200/v2/api-docs</code></p>
+        <p>3. Command to Run the Application: <code>mvn spring-boot:run</code></p>
+        <p>4. Instruction to Create Database: <code>CREATE DATABASE test_db;</code></p>
+        <p>5. Instruction to Access Postman API Collection: <code>Import Postman collection from /postman folder in project root directory.</code></p>
+        <p>6. Start the App (Linux Command): <code>sudo chmod +x .start.sh && sh start.sh</code></p>
+        <p>7. Stop the App (Linux Command): <code>sudo chmod +x .stop.sh && sh stop.sh</code></p>
+    </div>
+</div>
+</body>
+
+</html>

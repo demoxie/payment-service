@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "ed0ebf6e-5a81-4b99-866b-aa2c8520df28",
+		"name": "PAYMENT-SERVICE-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16898406",
+		"_collection_link": "https://gms-devs.postman.co/workspace/SURE-TRADE-V2~869ec0b8-cdd4-4642-8813-50d06d994f09/collection/16898406-ed0ebf6e-5a81-4b99-866b-aa2c8520df28?action=share&source=collection_link&creator=16898406"
+	},
+	"item": [
+		{
+			"name": "Verify Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8200/api/v1/payments/verify-payment?reference=936qy11z9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8200",
+					"path": [
+						"api",
+						"v1",
+						"payments",
+						"verify-payment"
+					],
+					"query": [
+						{
+							"key": "reference",
+							"value": "936qy11z9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make Payments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8200/api/v1/payments/initialize"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8200/api/v1/payments/get-all"
+			},
+			"response": []
+		}
+	]
+}

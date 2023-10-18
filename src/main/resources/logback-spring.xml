@@ -1,0 +1,25 @@
+<configuration>
+    <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
+        <file>/payment-service/logs/file.json.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>
+                /payment-service/logs/file.log.%d{yyyy-MM-dd}
+            </fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <highlight>
+            <color>TRACE=WHITE</color>
+            <color>DEBUG=GREEN</color>
+            <color>INFO=GREEN</color>
+            <color>WARN=YELLOW</color>
+            <color>ERROR=RED</color>
+        </highlight>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <pattern>%d{dd-MM-yyy HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="all">
+        <appender-ref ref="JSON" />
+    </root>
+</configuration>
