@@ -5,9 +5,11 @@ Welcome to the API documentation for Project Name. This document provides detail
 ## API Documentation
 
 For detailed API documentation, please refer to the [HTML Documentation](api_documentation.html). It includes the following information:
+## Note
+a. Before anything, create a file called `.env` in the root directory of the project and past the data sent to you via email. Then proceed to other instructions.
 
-1. Swagger Page URL: `https://your-api-domain/swagger-ui.html`
-2. Swagger Docs URL: `https://your-api-domain/v2/api-docs`
+1. Swagger Page URL: `https://localhost:8200/swagger-ui.html`
+2. Swagger Docs URL: `https://localhost:8200/v2/api-docs`
 3. Command to Run the Application: `mvn spring-boot:run`
 4. Instruction to Create Database: `CREATE DATABASE test_db;`
 5. Instruction to Access Postman API Collection: Import Postman collection from `/postman` folder in the project root directory.
@@ -23,8 +25,8 @@ For detailed API documentation, please refer to the [HTML Documentation](api_doc
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/project-name.git`
-2. Navigate to the project directory: `cd project-name`
+1. Clone the repository: `git clone https://github.com/demoxie/payment-service.git`
+2. Navigate to the project directory: `cd payment-service`
 3. Follow the instructions in the HTML documentation to set up and run the application.
 
 ## Contributing
